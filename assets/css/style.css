@@ -1,0 +1,31 @@
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .texto {
+        width: 66.6%;
+        padding-right: 100px; /* Espacio entre el texto y la imagen */
+        text-align: justify;
+    }
+
+    .imagen {
+        width: 33.3%;
+    }
+
+    .imagenperfil {
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .deathroadcss {
+        width: 45.5%;
+    }
+
+    .imagendeathroad {
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
