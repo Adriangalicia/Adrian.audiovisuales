@@ -3034,6 +3034,28 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 900px) {
+
+			.body {
+				padding: 30px;
+			}
+
+			.contenedor {
+				width: 250%;
+				top: 100px;
+				padding: 0;			
+			}
+			
+			.contenedor > .texto {
+				font-size: 1.5rem;
+			}
+
+			.contenedor > .image. {
+				max-width: 900;
+			}
+
+		}
+
 		@media screen and (max-width: 980px) {
 
 			.spotlights > section {
