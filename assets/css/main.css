@@ -3409,8 +3409,7 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: contain;
 		border-bottom: 0 !important;
-		cursor: default;
-		height: 60vh;
+		cursor: default;		
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -3776,7 +3775,7 @@ input, select, textarea {
 			padding: 4em 0 2em 0 ;
 			margin: 0 auto;
 			max-width: 65em;
-			width: calc(100% - 6em);
+			
 		}
 
 			@media screen and (max-width: 736px) {
