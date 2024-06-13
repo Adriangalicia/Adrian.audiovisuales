@@ -45,6 +45,7 @@
 .swiper {
     width: 80%;
     overflow: hidden;
+    position: relative; /* Asegura que los botones de navegación se posicionen correctamente */
 }
 
 .swiper-slide {
@@ -53,14 +54,18 @@
     align-items: center;
 }
 
-.swiper-slide video {
-    display: block;
-    width: 100%;
-    height: auto;
+.swiper-slide iframe {
+    width: 315px; /* Ajusta el ancho según sea necesario */
+    height: 560px; /* Ajusta la altura según sea necesario */
 }
 
 @media (max-width: 991px) {
     .carruselreels {
         padding: 0 20px;
+    }
+
+    .swiper-slide iframe {
+        width: 100%;
+        height: auto;
     }
 }
