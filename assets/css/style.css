@@ -1,19 +1,11 @@
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .texto {
-    width: 66.6%;
-    padding-right: 100px; /* Espacio entre el texto y la imagen */
-    text-align: justify;
+    width: 60%;
+    padding-right: 90px; /* Espacio entre el texto y la imagen */
+    flex: 1 1 100%;    
 }
 
 .imagen {
-    width: 33.3%;
+    width: 33%;
 }
 
 .imagenperfil {
@@ -21,13 +13,62 @@
     height: auto; /* Ajusta la altura automáticamente */
 }
 
-.deathroadcss {
-    width: 45.5%;
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.imagendeathroad {
-    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
+.major h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.video-container {
+    flex: 1 1 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto, .imagen {
+        width: 40%;
+        padding-right: 0; /* Eliminar el espacio entre el texto y la imagen en pantallas pequeñas */
+    }
+
+    .texto {
+        margin-bottom: 20px; /* Espacio entre el texto y la imagen en pantallas pequeñas */
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+    .texto, .video-container {
+        flex: 1 1 45%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .texto {
+        text-align: justify;
+    }
 }
 
 .carruselreels {
