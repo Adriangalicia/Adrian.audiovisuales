@@ -333,3 +333,35 @@
 			});
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	const track = document.getElementById('carouselTrack');
+	if (!track) return;
+
+	const items = Array.from(track.children);
+
+	items.forEach(item => {
+		const clone = item.cloneNode(true);
+		track.appendChild(clone);
+	});
+
+	let position = 0;
+	const speed = 5;
+
+	function scrollCarousel() {
+		position -= speed;
+
+		if (Math.abs(position) >= track.scrollWidth / 2) {
+			position = 0;
+		}
+
+		track.style.transform = `translateX(${position}px)`;
+		requestAnimationFrame(scrollCarousel);
+	}
+
+	scrollCarousel();
+
+});
+
+
