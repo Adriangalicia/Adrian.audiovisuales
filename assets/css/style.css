@@ -89,9 +89,12 @@
 }
 
 .video-container iframe {
-    width: 100%;
-    height: 400px;
-    max-width: 720px; /* Ajuste de altura para pantallas grandes */
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
 @media (max-width: 1200px) {
@@ -274,6 +277,12 @@
         gap: 20px;
     }
 }
+
+.project-carousel {
+	overflow: hidden;
+	width: 100%;
+}
+
 /* ===============================
    DESATURADO → COLOR EN HOVER
 ================================ */
@@ -539,7 +548,7 @@
 .logos-grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr); /* 5 columnas en desktop */
-	gap: 25px;
+	gap: 75px;
 	justify-items: center;
 }
 
@@ -547,8 +556,8 @@
 .logos-grid a {
 	display: block;
 	width: 100%;
-	max-width: 120px; /* controla tamaño máximo */
-	aspect-ratio: 1 / 1; /* siempre cuadrado */
+	max-width: 150px; /* controla tamaño máximo */
+	aspect-ratio: 1/1; /* siempre cuadrado */
 	border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #ffffff;
@@ -580,8 +589,7 @@
 .videoreel {
 	width: 100%;
 	max-width: 1200px; /* opcional, para que no sea gigante en pantallas grandes */
-	margin: 0 auto;
-	padding: 0 20px;
+	
 }
 
 /* VIDEO RESPONSIVE 16:9 */
@@ -599,4 +607,14 @@
 	width: 100%;
 	height: 100%;
 	border: 0;
+}
+
+
+
+.video-container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto; /* 👈 centra */
+	aspect-ratio: 16 / 9;
 }
