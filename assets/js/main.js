@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	let position = 0;
-	const speed = 5;
+	const speed = 2;
 
 	function scrollCarousel() {
 		position -= speed;
