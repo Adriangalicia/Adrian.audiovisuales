@@ -364,4 +364,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.querySelectorAll('.video-wrapper').forEach(el => {
+	el.addEventListener('click', () => {
+		const id = el.dataset.video;
 
+		el.innerHTML = `
+			<iframe 
+				src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}"
+				frameborder="0"
+				allow="autoplay; encrypted-media"
+				allowfullscreen>
+			</iframe>
+		`;
+	});
+});

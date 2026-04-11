@@ -374,6 +374,46 @@
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #000;
+    cursor: pointer;
+}
+
+.video-wrapper img {
+	width: 100%;
+	display: block;
+}
+
+.video-wrapper .play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 50px;
+	color: white;
+
+	/* 🔥 RESET TOTAL DEL BOTÓN */
+	background: transparent;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	appearance: none;
+	-webkit-appearance: none;
+
+	cursor: pointer;
+
+	/* ✨ sombra elegante */
+	filter: drop-shadow(0 4px 10px rgba(0,0,0,0.7));
+
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.video-wrapper:hover .play {
+	transform: translate(-50%, -50%) scale(1.2);
+	text-shadow: 0px 6px 18px rgba(0,0,0,0.8);
+}
+
+.video-wrapper .play {
+	filter: drop-shadow(0 4px 10px rgba(0,0,0,0.7));
 }
 
 /* Video sin márgenes negros */
@@ -384,6 +424,8 @@
     height: 100%;
     border: 0;
 }
+
+
 
 /* Responsive */
 @media (max-width: 900px) {
