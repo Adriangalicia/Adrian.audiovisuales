@@ -150,9 +150,9 @@
     background-color: #ffffff;
     margin: 0;
     padding: 20px; /* Añadir padding para espaciamiento */
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
-    justify-content: center;
+  
     align-items: center;
     flex-direction: column; /* Para que las secciones se apilen verticalmente */
 }

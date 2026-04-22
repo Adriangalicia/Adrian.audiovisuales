@@ -3040,7 +3040,7 @@ button:disabled,
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	background-color: #ffffff;
+	background-color: #e7e7e7;
 }
 
 .spotlights>section>.image {
@@ -3050,7 +3050,7 @@ button:disabled,
 	display: block;
 	position: relative;
 	width: 30%;
-	padding: 60px;
+	padding: 20px;
 }
 
 .spotlights>section>.image img {
