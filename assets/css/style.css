@@ -165,6 +165,22 @@
     max-width: 1200px; /* Ajustar según sea necesario */
 }
 
+.video-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre los videos */
+    width: 100%;
+    max-width: 1200px; /* Ajustar según sea necesario */
+}
+
+.video-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espacio entre los videos */
+    width: 100%;
+    max-width: 750px; /* Ajustar según sea necesario */
+}
+
 .youtube-player {
     position: relative;
     width: 100%;
@@ -346,6 +362,18 @@
 }
 
 .videoreel-grid {
+    width: 100%;
+}
+
+.videoreel-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.videoreel-grid-2 {
     width: 100%;
 }
 
@@ -582,6 +610,72 @@
 }
 
 .logos-grid a {
+	border-bottom: none !important;
+	text-decoration: none;
+}
+
+/* ===== LOGOS DE PROYECTOS 2 ===== */
+
+.project-logos-2 {
+	padding: 30px 0;
+	background: #ffffff;
+}
+
+.logos-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 5 columnas en desktop */
+	gap: 75px;
+	justify-items: center;
+}
+
+.logos-grid-2 img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: auto;
+	border: 2px solid #ffffff;
+	transition: transform 0.3s ease;
+}
+
+.logos-grid-2 img:hover {
+	transform: scale(1.1);
+}
+
+.logos-grid-2 a {
+	border-bottom: none !important;
+	text-decoration: none;
+}
+
+/* ===== LOGOS DE PROYECTOS 3 ===== */
+
+.project-logos-3 {
+	padding: 30px 0;
+	background: #ffffff;
+}
+
+.logos-grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 5 columnas en desktop */
+	gap: 75px;
+	justify-items: center;
+}
+
+.logos-grid-3 img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: auto;
+	border: 2px solid #ffffff;
+	transition: transform 0.3s ease;
+}
+
+.logos-grid-3 img:hover {
+	transform: scale(1.1);
+}
+
+.logos-grid-3 a {
 	border-bottom: none !important;
 	text-decoration: none;
 }
